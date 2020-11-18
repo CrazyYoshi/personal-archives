@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=Didact+Gothic");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+html, body {
+  position: relative;
+  display: block;
+  font-size: 1em;
+  font-family: 'Didact Gothic', sans-serif;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background-color: #313335;
+  color: #bababa;
+}
+
+div {
+  margin-top: 100px;
+  display: block;
+  position: relative;
+  width: 100%;
+}
+div h1 {
+  left: 50%;
+  transform: translateX(-50%);
+  height: 40px;
+  width: auto;
+  display: inline-block;
+  position: relative;
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Didact Gothic', sans-serif;
+}
+div h1::before, div h1::after {
+  content: '';
+  height: 100%;
+  width: 100px;
+  top: 5px;
+  display: inline-block;
+  position: relative;
+  background-image: url("/files/png/logo-hafl.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+div h1::before {
+  margin-right: 20px;
+}
+div h1::after {
+  transform: rotateZ(180deg);
+  margin-left: 20px;
+}
+div p {
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 100px;
+  font-family: 'PT Sans', sans-serif;
+  width: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  position: relative;
+  text-align: justify;
+}
+div p a {
+  color: #bababa;
+}
+div p span {
+  color: #ca913f;
+}

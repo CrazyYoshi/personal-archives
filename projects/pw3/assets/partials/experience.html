@@ -1,0 +1,22 @@
+<div id="experiences">
+
+    <div id="exp_container">
+    <h1>Mes experiences</h1>
+    <p>Les expériences notables dans lesquelles j'ai remplis un rôle et eu des tâches à réaliser régulièrement.</p>
+
+    <article ng-click="open($index)" ng-class="{'active' : $index == openedIndex}" ng-repeat="experience in experiences"
+             data-job="{{experience.where}}"
+             style="background-color: {{experience.bgcolor}}; color:{{experience.color}}">
+
+        <img ng-src="{{experience.img}}" alt="{{experience.where}}">
+        <div class="content">
+            <h1>{{experience.title}}</h1>
+            <p class="job">{{experience.job}}</p>
+            <p class="period">{{formatDateString(experience.date_start)}} - {{formatDateString(experience.date_end)}}</p>
+            <p class="tasks">{{experience.text}}</p>
+        </div>
+    </article>
+
+    </div>
+
+</div>

@@ -1,0 +1,58 @@
+
+.logo::before {
+	background-size:cover;
+	background-image:url(/css/imgCss/logo.svg);
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+.brackets::before {
+	background-size:cover;
+	background-image:url(/css/imgCss/brackets.jpg);
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+.illustrator::before {
+	background-size:cover;
+	background-image:url(/css/imgCss/illustrator.jpg);
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+.macbook::before {
+	background-size:cover;
+	background-image:url(/css/imgCss/workspace.jpg);
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+.japan::before {
+	background-size:auto 100%;
+	background-image:url(/css/imgCss/kyoto-japan.jpg);
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+.manga::before {
+	background-size:cover;
+	background-image:url(/css/imgCss/divergence.png);
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+.music::before {
+	background-size:70%;
+	background-image:url(/css/imgCss/music.svg);
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+.games::before {
+	background-size:70%;
+	background-image:url(/css/imgCss/gamepad.svg);
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+

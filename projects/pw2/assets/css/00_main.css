@@ -1,0 +1,1135 @@
+@charset "UTF-8";
+/*CSS RESET*/
+/* line 5, ../../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h4, #viewer article h3, #viewer #aboutme ul li article p.l, #aboutme ul li #viewer article p.l, #viewer #more ul li article p.l, #more ul li #viewer article p.l, h3, #aboutme ul li article p.l, #more ul li article p.l, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, section div, footer, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, section div, footer, summary {
+  display: block;
+}
+
+/* line 8, ../../sass/00_main.scss */
+html,
+body {
+  position: absolute;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 1em;
+  font-family: 'Avenir Next LT Pro Regular';
+  cursor: default;
+  scroll-behaviour: smooth;
+}
+
+/* line 23, ../../sass/00_main.scss */
+main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin: 0;
+  padding: 0;
+  width: calc(100% + 30px);
+  height: 100%;
+}
+
+/* line 36, ../../sass/00_main.scss */
+section, section div, footer {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  padding: 2vh 0;
+}
+/* line 41, ../../sass/00_main.scss */
+section div, footer div {
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+  -webkit-flex-grow: 0;
+  flex-grow: 0;
+  width: 80vw;
+}
+
+/* line 49, ../../sass/00_main.scss */
+h2, h4, #viewer article h3, #viewer #aboutme ul li article p.l, #aboutme ul li #viewer article p.l, #viewer #more ul li article p.l, #more ul li #viewer article p.l {
+  padding: 0;
+  margin: 2vh 0 4vh 0;
+  font-size: 2.5em;
+  width: 100%;
+  display: block;
+}
+
+/* line 57, ../../sass/00_main.scss */
+h4 {
+  font-size: 1.5em;
+}
+
+/* line 62, ../../sass/00_main.scss */
+.logoPerso, #home {
+  background-image: url(../css-backgrounds/logo.svg);
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+/* line 1, ../../sass/sections/_01_homepage.scss */
+#home {
+  z-index: 12;
+  height: 100vh;
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+  -webkit-flex-grow: 0;
+  flex-grow: 0;
+  color: #fefefe;
+  background-color: #3498db;
+  padding: 0;
+  background-size: 50% auto;
+}
+
+/* line 4, ../../sass/sections/_02_aboutme.scss */
+#aboutme, #more {
+  color: #fefefe;
+  background-color: #2a6ab8;
+}
+/* line 6, ../../sass/sections/_02_aboutme.scss */
+#aboutme ul, #more ul {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  width: 80vw;
+  margin-bottom: 8vh;
+}
+/* line 13, ../../sass/sections/_02_aboutme.scss */
+#aboutme ul li, #more ul li {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  width: 48%;
+}
+/* line 18, ../../sass/sections/_02_aboutme.scss */
+#aboutme ul li i.poi, #more ul li i.poi {
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  height: 10vw;
+  width: 10vw;
+  font-size: 5vw;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+  -webkit-flex-grow: 0;
+  flex-grow: 0;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  color: #fefefe;
+  background-color: #3498db;
+}
+/* line 31, ../../sass/sections/_02_aboutme.scss */
+#aboutme ul li article, #more ul li article {
+  width: calc(100% - 12vw);
+}
+/* line 33, ../../sass/sections/_02_aboutme.scss */
+#aboutme ul li article h3, #more ul li article h3, #aboutme ul li article p.l, #more ul li article p.l {
+  font-weight: 800;
+  font-size: 1.2em;
+  margin-bottom: 2%;
+}
+/* line 41, ../../sass/sections/_02_aboutme.scss */
+#aboutme ul li article p.m, #more ul li article p.m {
+  font-weight: 500;
+  font-size: 0.9em;
+  margin-bottom: 5%;
+}
+/* line 46, ../../sass/sections/_02_aboutme.scss */
+#aboutme ul li article P.s, #more ul li article P.s {
+  font-weight: 300;
+  font-size: 0.8em;
+}
+/* line 52, ../../sass/sections/_02_aboutme.scss */
+#aboutme ul:last-of-type, #more ul:last-of-type {
+  margin-bottom: 0;
+}
+/* line 57, ../../sass/sections/_02_aboutme.scss */
+#aboutme ul.ltr li, #more ul.ltr li {
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  text-align: left;
+}
+/* line 63, ../../sass/sections/_02_aboutme.scss */
+#aboutme ul.rtl li, #more ul.rtl li {
+  -webkit-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+/* line 2, ../../sass/sections/_03_skills.scss */
+#skills {
+  color: #3498db;
+  background-color: #fefefe;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+/* line 68, ../../sass/utilities/_variables.scss */
+#skills > h2:before, #skills > h4:before, #viewer article #skills > h3:before, #viewer #aboutme ul li article #skills > p.l:before, #aboutme ul li #viewer article #skills > p.l:before, #viewer #more ul li article #skills > p.l:before, #more ul li #viewer article #skills > p.l:before {
+  font-family: FontAwesome;
+  font-size: 80%;
+  margin-right: 2%;
+  content: "";
+}
+/* line 74, ../../sass/utilities/_variables.scss */
+#skills > h2:after, #skills > h4:after, #viewer article #skills > h3:after, #viewer #aboutme ul li article #skills > p.l:after, #aboutme ul li #viewer article #skills > p.l:after, #viewer #more ul li article #skills > p.l:after, #more ul li #viewer article #skills > p.l:after {
+  font-family: FontAwesome;
+  font-size: 80%;
+  margin-left: 2%;
+  content: "";
+}
+/* line 7, ../../sass/sections/_03_skills.scss */
+#skills > h4 {
+  color: #fefefe;
+  background-color: #2a6ab8;
+  z-index: 10;
+  text-align: left;
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+  padding: 10px;
+  transition: 1s;
+  width: calc(80vw - 20px);
+}
+/* line 17, ../../sass/sections/_03_skills.scss */
+#skills > h4:before {
+  content: '';
+  position: absolute;
+  display: block;
+  background-color: #3498db;
+  width: 80%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -10;
+  transition: .5s;
+}
+/* line 29, ../../sass/sections/_03_skills.scss */
+#skills > h4:after {
+  font-family: FontAwesome;
+  content: "";
+  position: absolute;
+  font-size: 1.3em;
+  color: #3498db;
+  right: 0;
+  width: 5%;
+}
+/* line 37, ../../sass/sections/_03_skills.scss */
+#skills > h4 label {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  z-index: 90;
+  left: 0;
+  top: 0;
+}
+/* line 48, ../../sass/sections/_03_skills.scss */
+#skills input[type=checkbox] {
+  position: absolute;
+  left: -9999em;
+}
+/* line 52, ../../sass/sections/_03_skills.scss */
+#skills input[type=checkbox]:checked + h4 {
+  background-color: #3498db;
+}
+/* line 54, ../../sass/sections/_03_skills.scss */
+#skills input[type=checkbox]:checked + h4:before {
+  width: 100%;
+}
+/* line 57, ../../sass/sections/_03_skills.scss */
+#skills input[type=checkbox]:checked + h4:after {
+  font-family: FontAwesome;
+  content: "";
+  color: #2a6ab8;
+}
+/* line 61, ../../sass/sections/_03_skills.scss */
+#skills input[type=checkbox]:checked + h4 + ul {
+  max-height: 1000px;
+}
+/* line 67, ../../sass/sections/_03_skills.scss */
+#skills ul {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0;
+  max-height: 0;
+  width: calc(80vw - 20px);
+  overflow: hidden;
+  transition: .5s;
+}
+/* line 77, ../../sass/sections/_03_skills.scss */
+#skills ul li {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  margin: auto 2%;
+  width: 80px;
+}
+/* line 83, ../../sass/sections/_03_skills.scss */
+#skills ul li.s_hidden {
+  display: none;
+}
+/* line 86, ../../sass/sections/_03_skills.scss */
+#skills ul li i {
+  height: 80px;
+  width: 80px;
+  background-size: cover;
+  background-position: center;
+}
+/* line 92, ../../sass/sections/_03_skills.scss */
+#skills ul li p {
+  margin-top: 0.5vh;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+/* line 101, ../../sass/sections/_03_skills.scss */
+.aftereffect {
+  background-image: url("../skills/JPEG/aftereffect.jpg");
+}
+
+/* line 101, ../../sass/sections/_03_skills.scss */
+.brackets {
+  background-image: url("../skills/JPEG/brackets.jpg");
+}
+
+/* line 101, ../../sass/sections/_03_skills.scss */
+.cordova {
+  background-image: url("../skills/JPEG/cordova.jpg");
+}
+
+/* line 101, ../../sass/sections/_03_skills.scss */
+.css3 {
+  background-image: url("../skills/JPEG/css3.jpg");
+}
+
+/* line 101, ../../sass/sections/_03_skills.scss */
+.dreamweaver {
+  background-image: url("../skills/JPEG/dreamweaver.jpg");
+}
+
+/* line 101, ../../sass/sections/_03_skills.scss */
+.fcpx {
+  background-image: url("../skills/JPEG/fcpx.jpg");
+}
+
+/* line 101, ../../sass/sections/_03_skills.scss */
+.flashpro {
+  background-image: url("../skills/JPEG/flashpro.jpg");
+}
+
+/* line 101, ../../sass/sections/_03_skills.scss */
+.flstudio {
+  background-image: url("../skills/JPEG/flstudio.jpg");
+}
+
+/* line 101, ../../sass/sections/_03_skills.scss */
+.git {
+  background-image: url("../skills/JPEG/git.jpg");
+}
+
+/* line 101, ../../sass/sections/_03_skills.scss */
+.html5 {
+  background-image: url("../skills/JPEG/html5.jpg");
+}
+
+/* line 101, ../../sass/sections/_03_skills.scss */
+.illustrator {
+  background-image: url("../skills/JPEG/illustrator.jpg");
+}
+
+/* line 101, ../../sass/sections/_03_skills.scss */
+.indesign {
+  background-image: url("../skills/JPEG/indesign.jpg");
+}
+
+/* line 101, ../../sass/sections/_03_skills.scss */
+.java {
+  background-image: url("../skills/JPEG/java.jpg");
+}
+
+/* line 101, ../../sass/sections/_03_skills.scss */
+.jquery {
+  background-image: url("../skills/JPEG/jquery.jpg");
+}
+
+/* line 101, ../../sass/sections/_03_skills.scss */
+.js {
+  background-image: url("../skills/JPEG/js.jpg");
+}
+
+/* line 101, ../../sass/sections/_03_skills.scss */
+.mysql {
+  background-image: url("../skills/JPEG/mysql.jpg");
+}
+
+/* line 101, ../../sass/sections/_03_skills.scss */
+.photoshop {
+  background-image: url("../skills/JPEG/photoshop.jpg");
+}
+
+/* line 101, ../../sass/sections/_03_skills.scss */
+.php {
+  background-image: url("../skills/JPEG/php.jpg");
+}
+
+/* line 101, ../../sass/sections/_03_skills.scss */
+.processing {
+  background-image: url("../skills/JPEG/processing.jpg");
+}
+
+/* line 101, ../../sass/sections/_03_skills.scss */
+.puredata {
+  background-image: url("../skills/JPEG/puredata.jpg");
+}
+
+/* line 5, ../../sass/sections/_04_works.scss */
+#works {
+  color: #fefefe;
+  background-color: #3498db;
+}
+/* line 68, ../../sass/utilities/_variables.scss */
+#works > h2:before, #works > h4:before, #viewer article #works > h3:before, #viewer #aboutme ul li article #works > p.l:before, #aboutme ul li #viewer article #works > p.l:before, #viewer #more ul li article #works > p.l:before, #more ul li #viewer article #works > p.l:before {
+  font-family: FontAwesome;
+  font-size: 80%;
+  margin-right: 2%;
+  content: "";
+}
+/* line 74, ../../sass/utilities/_variables.scss */
+#works > h2:after, #works > h4:after, #viewer article #works > h3:after, #viewer #aboutme ul li article #works > p.l:after, #aboutme ul li #viewer article #works > p.l:after, #viewer #more ul li article #works > p.l:after, #more ul li #viewer article #works > p.l:after {
+  font-family: FontAwesome;
+  font-size: 80%;
+  margin-left: 2%;
+  content: "";
+}
+/* line 8, ../../sass/sections/_04_works.scss */
+#works article {
+  position: relative;
+  color: #fefefe;
+  background-color: #2a6ab8;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+  -webkit-flex-grow: 0;
+  flex-grow: 0;
+  overflow: hidden;
+  max-height: 10vh;
+  width: 80vw;
+  margin: 1vh 0;
+  transition: 1s ease-out;
+  text-align: left;
+}
+/* line 22, ../../sass/sections/_04_works.scss */
+#works article::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  transition: .5s ease-out;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 80%;
+}
+/* line 34, ../../sass/sections/_04_works.scss */
+#works article label {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  z-index: 10;
+  left: 0;
+  top: 0;
+}
+/* line 43, ../../sass/sections/_04_works.scss */
+#works article h4 {
+  text-align: center;
+  width: 100%;
+  background-color: #3498db;
+  padding: .5vh 0;
+  font-family: 'Avenir Next LT Pro Bold';
+}
+/* line 50, ../../sass/sections/_04_works.scss */
+#works article p {
+  width: 90%;
+  margin-bottom: 1vh;
+}
+/* line 53, ../../sass/sections/_04_works.scss */
+#works article p::before {
+  font-family: FontAwesome;
+}
+/* line 56, ../../sass/sections/_04_works.scss */
+#works article p.job::before {
+  content: " ";
+}
+/* line 59, ../../sass/sections/_04_works.scss */
+#works article p.date::before {
+  content: " ";
+}
+/* line 62, ../../sass/sections/_04_works.scss */
+#works article p.desc::before {
+  content: " ";
+  height: 100%;
+}
+/* line 68, ../../sass/sections/_04_works.scss */
+#works input[type=checkbox] {
+  position: absolute;
+  left: -9999em;
+}
+/* line 71, ../../sass/sections/_04_works.scss */
+#works input[type=checkbox]:checked + article {
+  max-height: 100vh;
+}
+/* line 73, ../../sass/sections/_04_works.scss */
+#works input[type=checkbox]:checked + article::after {
+  height: 100%;
+  content: '';
+  opacity: 0;
+}
+
+/* line 85, ../../sass/sections/_04_works.scss */
+.anid::after {
+  background-color: #9460a4;
+  background-image: url(../works/anid.svg);
+}
+
+/* line 85, ../../sass/sections/_04_works.scss */
+.tvfil78::after {
+  background-color: #fefefe;
+  background-image: url(../works/tvfil78.svg);
+}
+
+/* line 85, ../../sass/sections/_04_works.scss */
+.lisv::after {
+  background-color: #fefefe;
+  background-image: url(../works/lisv.svg);
+}
+
+/* line 2, ../../sass/sections/_05_portfolio.scss */
+#portfolio {
+  color: #3498db;
+  background-color: #fefefe;
+}
+/* line 68, ../../sass/utilities/_variables.scss */
+#portfolio > h2:before, #portfolio > h4:before, #viewer article #portfolio > h3:before, #viewer #aboutme ul li article #portfolio > p.l:before, #aboutme ul li #viewer article #portfolio > p.l:before, #viewer #more ul li article #portfolio > p.l:before, #more ul li #viewer article #portfolio > p.l:before {
+  font-family: FontAwesome;
+  font-size: 80%;
+  margin-right: 2%;
+  content: "";
+}
+/* line 74, ../../sass/utilities/_variables.scss */
+#portfolio > h2:after, #portfolio > h4:after, #viewer article #portfolio > h3:after, #viewer #aboutme ul li article #portfolio > p.l:after, #aboutme ul li #viewer article #portfolio > p.l:after, #viewer #more ul li article #portfolio > p.l:after, #more ul li #viewer article #portfolio > p.l:after {
+  font-family: FontAwesome;
+  font-size: 80%;
+  margin-left: 2%;
+  content: "";
+}
+/* line 5, ../../sass/sections/_05_portfolio.scss */
+#portfolio ul {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  width: 80vw;
+  color: #fefefe;
+  background-color: #3498db;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+/* line 13, ../../sass/sections/_05_portfolio.scss */
+#portfolio ul li {
+  padding: 20px;
+  text-align: center;
+  font-size: 1em;
+  transition: .2s;
+}
+/* line 18, ../../sass/sections/_05_portfolio.scss */
+#portfolio ul li:hover {
+  color: #fefefe;
+  background-color: #2a6ab8;
+  cursor: pointer;
+}
+/* line 22, ../../sass/sections/_05_portfolio.scss */
+#portfolio ul li:first-letter {
+  text-transform: capitalize;
+}
+/* line 27, ../../sass/sections/_05_portfolio.scss */
+#portfolio > div {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  width: 80vw;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+/* line 33, ../../sass/sections/_05_portfolio.scss */
+#portfolio > div figure {
+  position: relative;
+  width: 15VH;
+  height: 15vh;
+  margin-bottom: 1vh;
+  background-color: #fefefe;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+/* line 44, ../../sass/sections/_05_portfolio.scss */
+#portfolio > div figure:hover {
+  cursor: pointer;
+}
+/* line 47, ../../sass/sections/_05_portfolio.scss */
+#portfolio > div figure img {
+  width: 100%;
+  height: 75%;
+  margin: 0;
+}
+/* line 52, ../../sass/sections/_05_portfolio.scss */
+#portfolio > div figure figcaption {
+  height: 25%;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  color: #fefefe;
+  background-color: #2a6ab8;
+  text-overflow: ellipsis;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  font-size: .8em;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+/* line 65, ../../sass/sections/_05_portfolio.scss */
+#portfolio > div figure p {
+  display: none;
+}
+
+/* line 72, ../../sass/sections/_05_portfolio.scss */
+#viewer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  z-index: 30;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  color: #fefefe;
+  background-color: #3498db;
+  transition: .5s;
+}
+/* line 85, ../../sass/sections/_05_portfolio.scss */
+#viewer i.quit {
+  color: #fefefe;
+  background-color: #2a6ab8;
+  padding: 1vh 1vw;
+  margin: 2vh 0 1vh 0;
+  width: calc(80vw - 2vw);
+  transition: .2s;
+}
+/* line 91, ../../sass/sections/_05_portfolio.scss */
+#viewer i.quit:hover {
+  color: #fefefe;
+  background-color: #db3445;
+  cursor: pointer;
+}
+/* line 96, ../../sass/sections/_05_portfolio.scss */
+#viewer * {
+  z-index: 999;
+}
+/* line 99, ../../sass/sections/_05_portfolio.scss */
+#viewer.viewerOn {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+/* line 103, ../../sass/sections/_05_portfolio.scss */
+#viewer article {
+  width: 80vw;
+}
+/* line 105, ../../sass/sections/_05_portfolio.scss */
+#viewer article h3, #viewer #aboutme ul li article p.l, #aboutme ul li #viewer article p.l, #viewer #more ul li article p.l, #more ul li #viewer article p.l {
+  color: #fefefe;
+  background-color: #2a6ab8;
+  padding: 1vh 0;
+  margin: 0 0 1vh 0;
+}
+/* line 111, ../../sass/sections/_05_portfolio.scss */
+#viewer article figure {
+  padding: 1vh 0;
+  width: 100%;
+  height: 50vh;
+  color: #fefefe;
+  background-color: #2a6ab8;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+/* line 120, ../../sass/sections/_05_portfolio.scss */
+#viewer article figure img {
+  width: auto;
+  height: 90%;
+  background-color: #fefefe;
+}
+/* line 125, ../../sass/sections/_05_portfolio.scss */
+#viewer article figure figcaption {
+  font-family: 'Avenir Next LT Pro Italic';
+  font-size: .8em;
+}
+/* line 130, ../../sass/sections/_05_portfolio.scss */
+#viewer article p {
+  width: calc(100% - 2vw);
+  height: auto;
+  padding: 1vh 1vw;
+  margin: 1vh 0;
+  color: #fefefe;
+  background-color: #2a6ab8;
+  text-align: left;
+}
+/* line 138, ../../sass/sections/_05_portfolio.scss */
+#viewer article p#tags::before {
+  content: 'Tags : ';
+}
+/* line 143, ../../sass/sections/_05_portfolio.scss */
+#viewer article a {
+  display: block;
+  width: calc(100% - 2vw);
+  height: auto;
+  padding: 1vh 1vw;
+  margin: 1vh 0;
+  text-decoration: none;
+  color: #fefefe;
+  background-color: #2a6ab8;
+  transition: .2s;
+}
+/* line 152, ../../sass/sections/_05_portfolio.scss */
+#viewer article a:visited {
+  color: #fefefe;
+  background-color: #2a6ab8;
+}
+/* line 155, ../../sass/sections/_05_portfolio.scss */
+#viewer article a:active {
+  color: #fefefe;
+  background-color: #3498db;
+}
+/* line 158, ../../sass/sections/_05_portfolio.scss */
+#viewer article a:hover {
+  color: #fefefe;
+  background-color: #db3445;
+}
+/* line 161, ../../sass/sections/_05_portfolio.scss */
+#viewer article a:focus {
+  border-color: #fefefe;
+  border-style: solid;
+  border-width: thin;
+}
+
+/* line 68, ../../sass/utilities/_variables.scss */
+#more > h2:before, #more > h4:before, #viewer article #more > h3:before, #viewer #aboutme ul li article #more > p.l:before, #aboutme ul li #viewer article #more > p.l:before, #viewer #more ul li article #more > p.l:before, #more ul li #viewer article #more > p.l:before {
+  font-family: FontAwesome;
+  font-size: 80%;
+  margin-right: 2%;
+  content: "";
+}
+/* line 74, ../../sass/utilities/_variables.scss */
+#more > h2:after, #more > h4:after, #viewer article #more > h3:after, #viewer #aboutme ul li article #more > p.l:after, #aboutme ul li #viewer article #more > p.l:after, #viewer #more ul li article #more > p.l:after, #more ul li #viewer article #more > p.l:after {
+  font-family: FontAwesome;
+  font-size: 80%;
+  margin-left: 2%;
+  content: "";
+}
+/* line 6, ../../sass/sections/_06_more.scss */
+#more .linkedin {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60% auto;
+  background-color: #fefefe !important;
+  background-image: url("../more/JPEG/linkedin.jpg") !important;
+}
+/* line 6, ../../sass/sections/_06_more.scss */
+#more .github {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60% auto;
+  background-color: #fefefe !important;
+  background-image: url("../more/JPEG/github.jpg") !important;
+}
+/* line 16, ../../sass/sections/_06_more.scss */
+#more ul li p.links {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+/* line 20, ../../sass/sections/_06_more.scss */
+#more ul li p.links a {
+  width: 50%;
+  padding: 1vh 0;
+  text-align: center;
+  color: #fefefe;
+  background-color: #3498db;
+  text-decoration: none;
+}
+/* line 26, ../../sass/sections/_06_more.scss */
+#more ul li p.links a:hover {
+  color: #fefefe;
+  background-color: #db3445;
+}
+/* line 29, ../../sass/sections/_06_more.scss */
+#more ul li p.links a:active {
+  color: #3498db;
+  background-color: #fefefe;
+}
+
+/* line 1, ../../sass/sections/_07_contact.scss */
+#contact {
+  color: #3498db;
+  background-color: #fefefe;
+}
+/* line 68, ../../sass/utilities/_variables.scss */
+#contact > h2:before, #contact > h4:before, #viewer article #contact > h3:before, #viewer #aboutme ul li article #contact > p.l:before, #aboutme ul li #viewer article #contact > p.l:before, #viewer #more ul li article #contact > p.l:before, #more ul li #viewer article #contact > p.l:before {
+  font-family: FontAwesome;
+  font-size: 80%;
+  margin-right: 2%;
+  content: "";
+}
+/* line 74, ../../sass/utilities/_variables.scss */
+#contact > h2:after, #contact > h4:after, #viewer article #contact > h3:after, #viewer #aboutme ul li article #contact > p.l:after, #aboutme ul li #viewer article #contact > p.l:after, #viewer #more ul li article #contact > p.l:after, #more ul li #viewer article #contact > p.l:after {
+  font-family: FontAwesome;
+  font-size: 80%;
+  margin-left: 2%;
+  content: "";
+}
+/* line 5, ../../sass/sections/_07_contact.scss */
+#contact p a {
+  text-decoration: none;
+  color: #2a6ab8;
+}
+/* line 8, ../../sass/sections/_07_contact.scss */
+#contact p a:hover {
+  color: #db3445;
+}
+/* line 13, ../../sass/sections/_07_contact.scss */
+#contact form {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  margin: 1vh 0;
+}
+/* line 17, ../../sass/sections/_07_contact.scss */
+#contact form * {
+  width: calc(80vw / 2 - 0.8vw);
+  padding: 1vh 0.4vw;
+  border: none;
+  color: #fefefe;
+  background-color: #3498db;
+  resize: vertical;
+  margin: 0.2vh 0;
+  text-align: center;
+  font-size: .9em;
+}
+/* line 26, ../../sass/sections/_07_contact.scss */
+#contact form *:focus {
+  outline: 0;
+  border: none;
+  color: #fefefe;
+  background-color: #2a6ab8;
+}
+/* line 61, ../../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+#contact form *:-moz-placeholder {
+  color: #fefefe;
+  font-family: 'Avenir Next LT Pro Italic';
+}
+/* line 64, ../../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+#contact form *::-moz-placeholder {
+  color: #fefefe;
+  font-family: 'Avenir Next LT Pro Italic';
+}
+/* line 67, ../../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+#contact form *:-ms-input-placeholder {
+  color: #fefefe;
+  font-family: 'Avenir Next LT Pro Italic';
+}
+/* line 56, ../../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+#contact form *::-webkit-input-placeholder {
+  color: #fefefe;
+  font-family: 'Avenir Next LT Pro Italic';
+}
+/* line 36, ../../sass/sections/_07_contact.scss */
+#contact form input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #2a6ab8 inset;
+  -webkit-text-fill-color: #fefefe;
+}
+/* line 40, ../../sass/sections/_07_contact.scss */
+#contact form textarea {
+  text-align: left;
+  min-height: 30vh;
+  font-size: 1.1em;
+}
+/* line 45, ../../sass/sections/_07_contact.scss */
+#contact form button {
+  width: calc(80vw / 2);
+}
+
+/* line 1, ../../sass/utilities/_menu.scss */
+input[type='checkbox'] {
+  position: fixed;
+  left: -9999em;
+}
+/* line 5, ../../sass/utilities/_menu.scss */
+input[type='checkbox']:checked ~ nav {
+  left: 0;
+}
+/* line 7, ../../sass/utilities/_menu.scss */
+input[type='checkbox']:checked ~ nav > i::after {
+  content: "";
+}
+/* line 10, ../../sass/utilities/_menu.scss */
+input[type='checkbox']:checked ~ nav ul li {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* line 18, ../../sass/utilities/_menu.scss */
+nav {
+  position: fixed;
+  top: 50vh;
+  transform: translateY(-50%);
+  left: -9vw;
+  z-index: 20;
+  transition: 0.5s;
+}
+/* line 25, ../../sass/utilities/_menu.scss */
+nav > i {
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translateX(-50%) translateY(-50%);
+  height: 5vh;
+  width: 5vh;
+  border-radius: 100%;
+  color: #fefefe;
+  background-color: #3498db;
+  overflow: hidden;
+  z-index: 49;
+  transition: .2s;
+}
+/* line 37, ../../sass/utilities/_menu.scss */
+nav > i:hover {
+  color: #fefefe;
+  background-color: #2a6ab8;
+}
+/* line 40, ../../sass/utilities/_menu.scss */
+nav > i::after {
+  position: absolute;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  font-size: 1.5em;
+  font-family: FontAwesome;
+  content: "";
+}
+/* line 51, ../../sass/utilities/_menu.scss */
+nav > i label {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  z-index: 50;
+}
+/* line 59, ../../sass/utilities/_menu.scss */
+nav ul {
+  text-align: left;
+  padding: 1vh 0;
+  min-width: 15vw;
+  overflow: hidden;
+  color: #fefefe;
+  background-color: #4DA5E0;
+  border-radius: 0 100% 100% 0;
+}
+/* line 66, ../../sass/utilities/_menu.scss */
+nav ul li {
+  visibility: hidden;
+  opacity: 0;
+  z-index: 21;
+  width: 100%;
+  margin: 1vh 0;
+  transition: .2s;
+}
+/* line 73, ../../sass/utilities/_menu.scss */
+nav ul li:first-of-type {
+  margin-top: 0;
+}
+/* line 76, ../../sass/utilities/_menu.scss */
+nav ul li:last-of-type {
+  margin-bottom: 0;
+}
+/* line 79, ../../sass/utilities/_menu.scss */
+nav ul li a {
+  color: #fefefe;
+  background-color: #4DA5E0;
+  display: block;
+  padding: 0.5vh 0 0.5vw 0.5vw;
+  width: 100%;
+  text-decoration: none;
+  transition: .1s;
+}
+/* line 86, ../../sass/utilities/_menu.scss */
+nav ul li a:hover {
+  color: #fefefe;
+  background-color: #3498db;
+}
+
+/* line 77, ../../sass/00_main.scss */
+footer {
+  color: #3498db;
+  background-color: #fefefe;
+  width: 100%;
+  min-height: 5vh;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+/* line 85, ../../sass/00_main.scss */
+footer p {
+  width: 80vw;
+}

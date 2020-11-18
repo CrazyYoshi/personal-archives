@@ -1,0 +1,124 @@
+        /* work experience */
+
+        #travail {
+            background-color: #2a6ab8;
+            color: #fefefe;
+        }
+
+        #travail h2::before {
+            margin-right: 1%;
+            content: '\f0b1';
+            font-size: 80%;
+            font-family: FontAwesome;
+        }
+
+        #travail h2::after {
+            margin-left: 1%;
+            content: '\f0b1';
+            font-size: 80%;
+            font-family: FontAwesome;
+        }
+
+        .lisv::after {
+            background: #ecf0f1 url(../works/lisv.svg) no-repeat center;
+        }
+
+        .anid::after {
+            background: #9460a4 url(../works/anid.svg) no-repeat center;
+        }
+
+        .tvfil78::after {
+            background: #ecf0f1 url(../works/tvfil78.svg)no-repeat center;
+        }
+
+        .work {
+            position: relative;
+            left: 50%;
+            display: -webkit-inline-box;
+            display: -webkit-inline-flex;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-flex-direction: column;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            overflow: hidden;
+            margin: 1vh 1vw;
+            padding: 1vh 1vw;
+            max-height: 8vh;
+            width: var(--width-mainElements);
+            background-color: #3498db;
+            color: #ecf0f1;
+            -webkit-transition: 1s ease-out;
+            transition: 1s ease-out;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+        }
+
+        .work:hover {
+            cursor: pointer;
+        }
+
+        .work::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            content: '';
+            -webkit-transition: .5s ease-out;
+            transition: .5s ease-out;
+        }
+
+        .workOn::after {
+            height: 100%;
+            content: '';
+            opacity: 0;
+        }
+
+        .workOn {
+            max-height: 50vh;
+            -webkit-transition: 1s ease-out;
+            transition: 1s ease-out;
+        }
+
+        .place {
+            margin: 0;
+            padding-bottom: 0;
+            width: 100%;
+            font-size: 1.5em;
+            font-family: 'Avenir Next LT Pro Bold';
+        }
+
+        .job {
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+
+        .date {
+            display: block;
+            margin: .2vh 0;
+            font-size: 1.1em;
+        }
+
+        .descJob {
+            float: left;
+            margin: 1vh 0;
+            text-align: left;
+        }
+
+        .descJob::before {
+            float: left;
+            height: 100%;
+            content: 'Tâches : \00a0';
+            font-weight: 900;
+        }

@@ -1,0 +1,52 @@
+#home {
+    z-index: 6;
+    padding: 0;
+}
+
+.homePage {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    -ms-flex-pack: center;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    -ms-flex-align: center;
+    -ms-flex-align: center;
+    min-height: 100vh;
+    background-color: #3498db;
+    color: #fefefe;
+
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+}
+
+.homepagelogo {
+    z-index: 99999;
+    width: 90vh!important;
+    height: 90vh!important;
+    background-image: url(../css-backgrounds/logo.svg);
+    background-position: center;
+    background-size: 100% auto;
+}

@@ -1,0 +1,56 @@
+.rotateL {
+
+    -webkit-transform-origin:  50% 50%;
+    -ms-transform-origin:  50% 50%;
+    transform-origin:  50% 50%;
+    -webkit-animation: rotateL 4s linear infinite;
+    animation: rotateL 4s linear infinite;
+}
+@-webkit-keyframes rotateL {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+}
+@keyframes rotateL {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+}
+.rotateR {
+
+    -webkit-transform-origin:  50% 50%;
+    -ms-transform-origin:  50% 50%;
+    transform-origin:  50% 50%;
+    -webkit-animation: rotateR 4s linear infinite;
+    animation: rotateR 4s linear infinite;
+}
+@-webkit-keyframes rotateR {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotateR {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}

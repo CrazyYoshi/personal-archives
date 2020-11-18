@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html ng-app="NewDawn" lang="fr-FR">
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta charset="UTF-8">
+    <meta name="content-langage" content="fr">
+    <meta name="description" content="Maamar Miloud, site web personnel.">
+    <meta name="keywords"
+          content="miloud, milou, miloude, mamar, maamar, mmaamar, portfolio, developpeur, front, end, back, full-stack, mmi, web, etudiant, css3, html5, site, sites, cen"/>
+    <title>Maamar Miloud - Portfolio d'un développeur web</title>
+
+    <!--Librairies-->
+    <!--Angular.JS ui-router animate touch sanitize jquery-->
+    <script src="/js/libs.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css"/>
+
+    <base href="/">
+
+</head>
+<body>
+<!--
+<div id="loader">
+
+    <div id="boitier">
+        <div id="boitierExtension">
+            <div id="declencheur"></div>
+            <div id="roulette"></div>
+        </div>
+        <div id="partiesup"></div>
+        <div id="partieinf"></div>
+        <div id="flash"></div>
+        <div id="objectif"></div>
+    </div>
+</div>
+-->
+
+<nav ng-class="{opaque: $state.is('home')}">
+    <ul id="bar">
+        <h1><a ui-sref="home" ui-sref-active="active-state" data="Maamar Miloud">Maamar Miloud</a></h1>
+        <li><a ui-sref="roadmap" ui-sref-active="active-state" data="RoadMap">Roadmap</a></li>
+        <li><a ui-sref="contact" ui-sref-active="active-state" data="Contact">Contact</a></li>
+        <li><a ui-sref="portfolio" ui-sref-active="active-state" data="Portfolio">Portfolio</a></li>
+        <li><a ui-sref="experience" ui-sref-active="active-state" data="Expériences">Expériences</a></li>
+        <li><a ui-sref="me" ui-sref-active="active-state" data="Le Personnage">Le Personnage</a></li>
+
+
+        <div id="hamburger" class="" onclick="openCloseMenu()">
+            <span class="t1"></span>
+            <span class="t2"></span>
+            <span class="t3"></span>
+        </div>
+    </ul>
+</nav>
+<ul id="unroll" class="">
+    <li><a ui-sref="me" ui-sref-active="active-state" data="Le Personnage">Le Personnage</a></li>
+    <li><a ui-sref="experience" ui-sref-active="active-state" data="Expériences">Expériences</a></li>
+    <li><a ui-sref="portfolio" ui-sref-active="active-state" data="Portfolio">Portfolio</a></li>
+    <li><a ui-sref="contact" ui-sref-active="active-state" data="Contact">Contact</a></li>
+    <li><a ui-sref="roadmap" ui-sref-active="active-state" data="RoadMap">Roadmap</a></li>
+</ul>
+<main>
+    <section ui-view></section>
+    <footer class="" ng-class="{home: $state.is('home')}">{{footer}}</footer>
+</main>
+
+<img ng-repeat="(key, img) in bgImages" ng-src="{{img.img}}" alt="{{img.name}}" class="background-img"
+     ng-class="{'actual' : key == actual}">
+
+
+<!--APP-->
+<script src="/js/main.js"></script>
+</body>
+</html>
+
+
+<!--////////    What's coming up next !    \\\\\\\\-->
+
+<!--Par ordre de priorité
+
+-> Amélioration du responsive pour convenir au maximum de devices .
+-> Loader + Animation du logo en entrée de site.
+-> Ajout d'animations CSS.
+-> Ajout d'un back-office.
+-> Optimisations du code et "embellissement" de celui-ci
+
+-->

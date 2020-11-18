@@ -1,0 +1,83 @@
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    rgba(236, 240, 241, 0.5);
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:   rgba(236, 240, 241, 0.5);
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    rgba(236, 240, 241, 0.5);
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    rgba(236, 240, 241, 0.5);
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #4B77BE inset;
+    -webkit-text-fill-color:#ecf0f1;
+}
+
+.contactBox{
+
+    position : relative;
+    z-index:3;
+
+    height : auto;
+    width: 30vw;
+    margin:auto;
+    padding: 0;
+    color:#ecf0f1;
+    font-size: .8em;
+
+
+}
+
+.contactBox input,textarea{
+
+    position : relative;
+    z-index: 4;
+
+    display: block;
+    height: 4vh;
+    width: calc(100% - .6vw);
+
+    margin : 0 0 1vh 0;
+    padding: 0.3vh 0.3vw;    
+    text-align: center;
+    border : none;
+    font-size: .8em;
+
+    color:#ecf0f1;
+    background: #4B77BE;
+    resize: none;
+}
+.contactBox 
+input:focus,
+textarea:focus,
+button:focus{
+    background: #5D9CEC  ;
+    border: none;
+    outline: 0;
+}
+
+.contactBox button{
+
+    position : relative;
+    z-index: 4;
+    font-size: .8em;
+
+    display: block;
+    height: 4.6vh;
+    width: 100%;
+    margin : 0 0 1vh 0;
+    text-align: center;
+    border : none;
+
+    color:#ecf0f1;
+    background: #4B77BE;
+}
+
+.contactBox #message{
+    height: 40vh;
+    text-align: left;
+}

@@ -1,0 +1,330 @@
+.gears{
+    color:#89C4F4;
+        background-repeat: no-repeat;
+    background-position: center;
+    background-image:url(imgCss/gears.svg);
+    background-color: #1F4788 ;
+    background-size: cover;
+}
+
+.boxSkillz{
+
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 80%;
+    margin: 3vh auto 0 auto;
+    padding: 0;
+    
+    text-overflow: ellipsis;
+
+}
+
+.skillz {
+
+    z-index: 1;
+    
+    display: inline-block;
+    vertical-align: top;
+    width:20%;
+    margin:0 auto;
+    padding: 1vh .5vw;
+    font-size: 1em;
+    
+    
+}
+.skillz >h4{
+    margin-bottom: 5vh;
+    padding: 1vh 0 .8vh 0;
+    color: #ecf0f1;
+    background-color:rgba(236, 240, 241, 0.33);
+}
+.skillContainer {
+    position :relative;
+    z-index: 8;
+
+
+    height : 5vh;
+    margin:  0vh 0vh 2vh 0vh;
+    padding: .5vh .5vw;
+
+    color:#ecf0f1;
+    background-color:rgba(236, 240, 241, 0.33);
+    font-family:'Avenir Next LT Pro Demi';
+
+    font-size : .8em;
+    line-height: 5vh;
+    text-align:left;
+    text-indent:.1vw;
+}
+
+.skillContainer::before {
+    left: 0;
+    top : 0;
+    position : absolute;
+    z-index: -1;
+
+    display: block;
+    height: 100%;
+    width : 0;
+    opacity: 0;
+
+    background-color:#89C4F4;
+    color:#ecf0f1;
+    content: '';
+    -webkit-transition-delay: .5s;
+    transition-delay: .5s;
+    -webkit-transition : 1s;
+    transition : 1s;
+
+
+}
+
+.opacity::before{
+    opacity: 1;
+}
+
+.skillContainer::after{
+    top : .75vh;
+    left : 100%;
+    position : absolute;
+    z-index: 10;
+    width: 5em;
+
+    content: '';
+    color : white;
+    font-family:'Avenir Next LT Pro Demi';
+    text-align: left;
+}
+
+.markup{
+    position: absolute;
+    left: 0;
+    top : 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    display: none;
+    height :140%;
+    width : 0;
+    opacity: .6;
+    border-left-style: dotted;
+    border-left-width: medium;
+    border-left-color : #DC3023;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+
+
+
+.p10::before { 
+    width : 10%;
+    content: '';
+}
+.p10::after{
+    content: '10%';
+}
+.p10 > .markup{
+    left: 10%;
+}
+.p15::before { 
+    width : 15%;
+    content: '';
+}
+.p15::after{
+    content: '15%';
+}
+
+.p15 > .markup{
+    left: 15%;
+}
+.p20::before { 
+    width : 20%;
+    content: '';
+}
+.p20::after{
+    content: '20%';
+}
+
+.p20 > .markup{
+    left: 20%;
+}
+.p25::before { 
+    width : 25%;
+    content: '';
+}
+.p25::after{
+    content: '25%';
+}
+
+.p25 > .markup{
+    left: 25%;
+}
+.p30::before { 
+    width : 30%;
+    content: '';
+}
+.p30::after{
+    content: '30%';
+}
+
+.p30 > .markup{
+    left: 30%;
+}
+.p35::before { 
+    width : 35%;
+    content: '';
+}
+.p35::after{
+    content: '35%';
+}
+
+.p35 > .markup{
+    left: 35%;
+}
+.p40::before { 
+    width : 40%;
+    content: '';
+}
+.p40::after{
+    content: '40%';
+}
+
+.p40 > .markup{
+    left: 40%;
+}
+.p45::before { 
+    width : 45%;
+    content: '';
+}
+.p45::after{
+    content: '45%';
+}
+
+.p45 > .markup{
+    left: 45%;
+}
+.p50::before { 
+    width : 50%;
+    content: '';
+}
+.p50::after{
+    content: '50%';
+}
+
+.p50 > .markup{
+    left: 50%;
+}
+.p55::before { 
+    width : 55%;
+    content: '';
+}
+.p55::after{
+    content: '55%';
+}
+
+.p55 > .markup{
+    left: 55%;
+}
+.p60::before { 
+    width : 60%;
+    content: '';
+}
+.p60::after{
+    content: '60%';
+}
+
+.p60 > .markup{
+    left: 60%;
+}
+.p65::before { 
+    width : 65%;
+    content: '';
+}
+.p65::after{
+    content: '65%';
+}
+
+.p65 > .markup{
+    left: 65%;
+}
+.p70::before { 
+    width : 70%;
+    content: '';
+}
+.p70::after{
+    content: '70%';
+}
+
+.p70 > .markup{
+    left: 70%;
+}
+.p75::before { 
+    width : 75%;
+    content: '';
+}
+.p75::after{
+    content: '75%';
+}
+
+.p75 > .markup{
+    left: 75%;
+}
+.p80::before { 
+    width : 80%;
+    content: '';
+}
+.p80::after{
+    content: '80%';
+}
+
+.p80 > .markup{
+    left: 80%;
+}
+.p85::before { 
+    width : 85%;
+    content: '';
+}
+.p85::after{
+    content: '85%';
+}
+
+.p85 > .markup{
+    left: 85%;
+}
+.p90::before { 
+    width : 90%;
+    content: '';
+}
+.p90::after{
+    content: '90%';
+}
+
+.p90 > .markup{
+    left: 90%;
+}
+.p95::before { 
+    width : 95%;
+    content: '';
+}
+.p95::after{
+    content: '95%';
+}
+
+.p95 > .markup{
+    left: 95%;
+}
+.p100::before { 
+    width : 100%;
+    content: '';
+}
+.p100::after{
+    content: '100%';
+}
+
+.p100 > .markup{
+    left: 100%;
+}
